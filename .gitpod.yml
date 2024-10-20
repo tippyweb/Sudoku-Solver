@@ -8,3 +8,6 @@ ports:
 tasks:
   - init: npm install
     command: npm run start
+
+  - name: Start web server
+    init: python -m http.server 3000
